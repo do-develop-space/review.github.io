@@ -1,0 +1,24 @@
+# Jekyll 설정 파일
+title: 개발 블로그
+description: DDD와 헥사고날 아키텍처로 구현한 Spring Boot 이커머스 스토어 개발기
+author: do-develop-space
+url: https://do-develop-space.github.io
+baseurl: /review.github.io  # 저장소 이름에 맞춰 설정
+
+# Jekyll 플러그인
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# 테마 설정 (minima는 기본 테마)
+theme: minima
+
+# 마크다운 설정
+markdown: kramdown
+highlighter: rouge
+
+# 블로그 설정
+show_excerpts: true
+paginate: 5
+paginate_path: "/page:num/"
+
