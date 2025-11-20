@@ -12,7 +12,7 @@ title: 개발 블로그
 <div class="posts">
   {% for post in site.posts limit:5 %}
     <article class="post">
-      <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
+      <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</p>
       <p>{{ post.excerpt }}</p>
     </article>
