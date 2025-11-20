@@ -2,7 +2,7 @@
 layout: post
 title: "DDD와 MSA의 연관관계: 왜 DDD가 마이크로서비스로 가는 길인가"
 date: 2025-11-20
-categories: [아키텍처]
+categories: [architecture]
 tags: [DDD, MSA, 마이크로서비스, 헥사고날아키텍처]
 ---
 
