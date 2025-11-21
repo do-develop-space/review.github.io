@@ -2,7 +2,7 @@
 layout: post
 title: "AOP(Aspect-Oriented Programming): 횡단 관심사의 우아한 해결책"
 date: 2025-11-21
-categories: [architecture]
+categories: [programming]
 tags: [AOP, Spring AOP, 횡단관심사, 관점지향프로그래밍]
 ---
 
