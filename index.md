@@ -21,14 +21,19 @@ title: 개발 블로그
 
 ## 프로젝트
 
-- **[Yellow Store](https://github.com/do-develop-space/yellow-store)**: DDD와 헥사고날 아키텍처로 구현한 Spring Boot 이커머스 스토어
+<div class="project-card">
+  <h3><a href="https://github.com/do-develop-space/yellow-store">Yellow Store</a></h3>
+  <p>DDD와 헥사고날 아키텍처로 구현한 Spring Boot 이커머스 스토어</p>
+</div>
 
 ## 기술 스택
 
-- Spring Boot 4.0.0
-- Java 17
-- PostgreSQL
-- JPA
-- DDD (Domain-Driven Design)
-- 헥사고날 아키텍처 (Ports & Adapters)
+<div class="tech-stack">
+  <span class="tech-badge">Spring Boot 4.0.0</span>
+  <span class="tech-badge">Java 17</span>
+  <span class="tech-badge">PostgreSQL</span>
+  <span class="tech-badge">JPA</span>
+  <span class="tech-badge">DDD</span>
+  <span class="tech-badge">헥사고날 아키텍처</span>
+</div>
 

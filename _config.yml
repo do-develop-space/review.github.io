@@ -22,3 +22,8 @@ show_excerpts: true
 paginate: 5
 paginate_path: "/page:num/"
 
+# 커스텀 설정
+minima:
+  skin: default
+  social_links:
+    github: do-develop-space
