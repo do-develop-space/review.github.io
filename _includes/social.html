@@ -1,13 +1,5 @@
-{%- if site.minima.social_links -%}
-  <ul class="social-media-list">
-    {%- if site.minima.social_links.github -%}
-      <li>
-        <a href="https://github.com/{{ site.minima.social_links.github | cgi_escape | escape }}" title="{{ site.minima.social_links.github | escape }}">
-          <svg class="svg-icon grey"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
-          <span class="username">{{ site.minima.social_links.github | escape }}</span>
-        </a>
-      </li>
-    {%- endif -%}
-  </ul>
+{%- if site.minima.social_links.github -%}
+  <a href="https://github.com/{{ site.minima.social_links.github | cgi_escape | escape }}" title="{{ site.minima.social_links.github | escape }}">
+    <svg class="svg-icon"><use xlink:href="{{ '/assets/minima-social-icons.svg#github' | relative_url }}"></use></svg>
+  </a>
 {%- endif -%}
-
