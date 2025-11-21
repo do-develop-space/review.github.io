@@ -483,6 +483,13 @@ body {
     color: white;
 }
 
+/* Posts 제목 숨기기 (minima 테마 기본) */
+h2.post-list-heading,
+.post-list-heading,
+.page-heading {
+    display: none !important;
+}
+
 /* 체크박스 숨기기 (minima 테마의 사이드바 토글) */
 input[type="checkbox"],
 .sidebar-toggle,
