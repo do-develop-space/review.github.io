@@ -13,7 +13,8 @@ title: 개발 블로그
 </button>
 
 <div class="posts" id="posts-container" style="display: none;">
-  {% for post in site.posts limit:5 %}
+  {% assign sorted_posts = site.posts | sort: 'date' | reverse %}
+  {% for post in sorted_posts limit:5 %}
     <article class="post">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</p>
