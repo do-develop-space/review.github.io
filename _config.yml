@@ -11,7 +11,7 @@ plugins:
   - jekyll-sitemap
 
 # 테마 설정 (minima는 기본 테마)
-theme: minima
+# theme: minima  # 레이아웃을 커스터마이징하기 위해 주석 처리
 
 # 마크다운 설정
 markdown: kramdown
