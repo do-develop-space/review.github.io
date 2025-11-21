@@ -44,11 +44,16 @@ body {
     color: var(--text-color);
     padding: 1.5rem 0;
     box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    background-color: rgba(22, 27, 34, 0.8);
 }
 
 .site-title {
-    font-size: 1.5rem;
-    font-weight: 600;
+    display: flex;
+    flex-direction: column;
     margin: 0;
     font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', monospace;
 }
@@ -57,15 +62,40 @@ body {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.2s;
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
 }
 
 .site-title a:hover {
     color: var(--primary-color);
 }
 
+.site-title-main {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.site-title-sub {
+    font-size: 0.875rem;
+    font-weight: 400;
+    color: var(--text-light);
+    opacity: 0.8;
+}
+
 /* 네비게이션 */
 .site-nav {
-    margin-top: 1rem;
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.site-header .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .site-nav a {
@@ -404,11 +434,16 @@ body {
 
 /* 체크박스 숨기기 (minima 테마의 사이드바 토글) */
 input[type="checkbox"],
-.sidebar-toggle {
+.sidebar-toggle,
+.nav-trigger {
     display: none !important;
 }
 
 .sidebar {
+    display: none !important;
+}
+
+.menu-icon {
     display: none !important;
 }
 

@@ -7,8 +7,6 @@ title: 개발 블로그
 
 이 블로그는 DDD(Domain-Driven Design)와 헥사고날 아키텍처를 적용한 Spring Boot 이커머스 스토어 프로젝트의 개발 과정을 기록합니다.
 
-## 최근 포스트
-
 <div class="posts">
   {% for post in site.posts limit:5 %}
     <article class="post">
