@@ -25,7 +25,7 @@ title: 개발 블로그
 
 ## 기술 스택
 
-- Spring Boot 3.5.7
+- Spring Boot 4.0.0
 - Java 17
 - PostgreSQL
 - JPA
