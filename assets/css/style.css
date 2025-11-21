@@ -116,12 +116,16 @@ body {
     padding: 3rem 0;
     max-width: 800px;
     margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .wrapper {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 1.5rem;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 /* 포스트 토글 버튼 */
@@ -190,6 +194,9 @@ body {
     padding: 2rem;
     transition: all 0.2s ease;
     box-shadow: var(--shadow);
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 .post:hover {
@@ -569,29 +576,154 @@ input[type="checkbox"],
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
     .page-content {
-        padding: 2rem 0;
-    }
-    
-    .post {
-        padding: 1.5rem;
-    }
-    
-    .post-title {
-        font-size: 1.75rem;
-    }
-    
-    .site-title {
-        font-size: 1.5rem;
+        padding: 1.5rem 0;
+        max-width: 100%;
     }
     
     .wrapper {
         padding: 0 1rem;
+        max-width: 100%;
+    }
+    
+    .site-header {
+        padding: 1rem 0;
+    }
+    
+    .site-title-main {
+        font-size: 1.25rem;
+    }
+    
+    .site-title-sub {
+        font-size: 0.75rem;
+    }
+    
+    .post {
+        padding: 1.25rem;
+        margin: 0;
+        border-radius: 8px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+    .post h2 {
+        font-size: 1.125rem;
+        line-height: 1.4;
+        margin-bottom: 0.5rem;
+    }
+    
+    .post-date {
+        font-size: 0.8125rem;
+        margin-bottom: 0.75rem;
+    }
+    
+    .post-excerpt {
+        font-size: 0.875rem;
+        line-height: 1.5;
+        margin-bottom: 0.75rem;
+    }
+    
+    .read-more {
+        font-size: 0.8125rem;
+    }
+    
+    .post-title {
+        font-size: 1.5rem;
+    }
+    
+    .post-content {
+        font-size: 0.9375rem;
+        line-height: 1.7;
+    }
+    
+    .post-content h1 {
+        font-size: 1.5rem;
+    }
+    
+    .post-content h2 {
+        font-size: 1.25rem;
+    }
+    
+    .post-content h3 {
+        font-size: 1.125rem;
     }
     
     .post-content pre {
         padding: 1rem;
         font-size: 0.8125rem;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+    
+    .project-card {
+        padding: 1.25rem;
+        margin: 1rem 0;
+    }
+    
+    .tech-stack {
+        gap: 0.5rem;
+        margin: 1rem 0;
+    }
+    
+    .tech-badge {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.8125rem;
+    }
+    
+    .site-nav {
+        flex-direction: column;
+        gap: 0.5rem;
+        margin-top: 0.5rem;
+    }
+    
+    .site-nav a {
+        margin-right: 0;
+        font-size: 0.875rem;
+    }
+    
+    /* 모바일에서 포스트 카드 간격 조정 */
+    .posts {
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* 작은 모바일 (480px 이하) */
+@media (max-width: 480px) {
+    body {
+        font-size: 13px;
+    }
+    
+    .wrapper {
+        padding: 0 0.75rem;
+    }
+    
+    .post {
+        padding: 1rem;
+    }
+    
+    .post h2 {
+        font-size: 1rem;
+    }
+    
+    .post-title {
+        font-size: 1.25rem;
+    }
+    
+    .post-content h1 {
+        font-size: 1.25rem;
+    }
+    
+    .post-content h2 {
+        font-size: 1.125rem;
+    }
+    
+    .site-title-main {
+        font-size: 1.125rem;
     }
 }
 
