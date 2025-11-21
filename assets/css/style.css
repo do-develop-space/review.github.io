@@ -191,8 +191,13 @@ body {
     padding: 2rem;
     transition: all 0.2s ease;
     box-shadow: var(--shadow);
+    width: 100%;
     max-width: 700px;
+    min-width: 700px;
     margin: 0 auto;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 .post:hover {
@@ -208,10 +213,20 @@ body {
     font-weight: 600;
 }
 
+.post h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 .post h2 a {
     color: var(--text-color);
     text-decoration: none;
     transition: color 0.2s;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
 }
 
 .post h2 a:hover {
@@ -236,6 +251,12 @@ body {
     line-height: 1.6;
     margin-bottom: 1rem;
     font-size: 0.9375rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    word-wrap: break-word;
 }
 
 .read-more {
@@ -582,10 +603,18 @@ input[type="checkbox"],
     
     .post {
         padding: 1.5rem;
+        min-width: auto;
+        max-width: 100%;
+        width: 100%;
     }
     
     .post h2 {
         font-size: 1.125rem;
+        white-space: normal;
+    }
+    
+    .post h2 a {
+        white-space: normal;
     }
     
     .post-title {
