@@ -169,6 +169,7 @@ body {
     flex-direction: column;
     gap: 2rem;
     margin-top: 1.5rem;
+    align-items: center;
     animation: slideDown 0.3s ease-out;
 }
 
