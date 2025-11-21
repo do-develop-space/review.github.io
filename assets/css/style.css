@@ -124,12 +124,63 @@ body {
     padding: 0 1.5rem;
 }
 
+/* 포스트 토글 버튼 */
+.posts-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0.875rem 1.25rem;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    margin: 2rem 0 0 0;
+    font-family: inherit;
+}
+
+.posts-toggle:hover {
+    border-color: var(--primary-color);
+    background-color: var(--bg-light);
+}
+
+.posts-toggle.active {
+    border-color: var(--primary-color);
+    background-color: var(--bg-light);
+}
+
+.toggle-icon {
+    font-size: 0.875rem;
+    transition: transform 0.2s;
+    margin-left: 0.5rem;
+}
+
+.posts-toggle.active .toggle-icon {
+    transform: rotate(180deg);
+}
+
 /* 포스트 카드 스타일 */
 .posts {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: 1.5rem;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .post {
