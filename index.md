@@ -14,7 +14,8 @@ title: 개발 블로그
     <article class="post">
       <h2><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h2>
       <p class="post-date">{{ post.date | date: "%Y년 %m월 %d일" }}</p>
-      <p>{{ post.excerpt }}</p>
+      <p class="post-excerpt">{{ post.excerpt | strip_html | truncatewords: 30 }}</p>
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">더 보기 →</a>
     </article>
   {% endfor %}
 </div>
