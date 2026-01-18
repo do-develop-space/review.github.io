@@ -2,6 +2,11 @@
 
 GitHub Pages를 통해 호스팅되는 Jekyll 블로그입니다.
 
+## 기술 스택
+
+- **Spring Boot**: 3.5.8
+- **Java**: 21
+
 ## 로컬에서 블로그 실행하기
 
 ### 1. Ruby와 Jekyll 설치
@@ -65,4 +70,5 @@ tags: [DDD, 헥사고날, Spring Boot]
 ## GitHub Actions 자동 배포
 
 `.github/workflows/pages.yml` 파일이 포함되어 있어, `main` 브랜치에 푸시하면 자동으로 블로그가 배포됩니다.
+
 

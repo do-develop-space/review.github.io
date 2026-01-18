@@ -22,15 +22,15 @@ title: 개발 블로그
 ## 프로젝트
 
 <div class="project-card">
-  <h3><a href="https://github.com/do-develop-space/yellow-store">Yellow Store</a></h3>
+  <h3><a href="https://github.com/do-develop-space/yellow-store">Yellow Store & Baro-Farm</a></h3>
   <p>DDD와 헥사고날 아키텍처로 구현한 Spring Boot 이커머스 스토어</p>
 </div>
 
 ## 기술 스택
 
 <div class="tech-stack">
-  <span class="tech-badge">Spring Boot 4.0.0</span>
-  <span class="tech-badge">Java 17</span>
+  <span class="tech-badge">Spring Boot 3.5.8</span>
+  <span class="tech-badge">Java 21</span>
   <span class="tech-badge">PostgreSQL</span>
   <span class="tech-badge">JPA</span>
   <span class="tech-badge">DDD</span>

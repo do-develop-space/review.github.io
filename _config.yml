@@ -5,6 +5,11 @@ author: do-develop-space
 url: https://do-develop-space.github.io
 baseurl: /review.github.io  # 저장소 이름에 맞춰 설정
 
+# 기술 스택
+tech_stack:
+  spring_boot: "3.5.8"
+  java: "21"
+
 # Jekyll 플러그인
 plugins:
   - jekyll-feed

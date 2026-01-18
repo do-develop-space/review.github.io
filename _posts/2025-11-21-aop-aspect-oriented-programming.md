@@ -256,7 +256,7 @@ public class MemberService {
 
 ## Yellow Store 프로젝트에서의 활용
 
-Yellow Store 프로젝트에서는 다음과 같은 AOP 활용이 가능합니다:
+Yellow Store 프로젝트에서는 다음과 같은 AOP 활용 방법을 공부하고 있으며, 적용할 예정입니다:
 
 1. **로깅 AOP**: 모든 서비스 메서드의 실행 시간과 파라미터 로깅
 2. **예외 처리 AOP**: 공통 예외 처리 및 응답 변환
